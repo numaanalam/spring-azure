@@ -1,0 +1,18 @@
+spring:
+
+  datasource:
+    url: jdbc:sqlserver://sample-server41.database.windows.net:1433;database=sampleDB;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: numaanalam
+    password: Admin@123
+     
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9090
+  
